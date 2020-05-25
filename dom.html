@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lean Dom</title>
+</head>
+<body>
+    <a id="demo" href="https://www.w3schools.com/howto/howto_js_accordion.asp" >Tim hieu ve dom</a>
+    <button id="btn" onclick="changeId()" >Click Me</button>
+
+    <script>
+        function changeId() {
+ 
+            document.getElementById('demo').href = "titlele";
+            document.getElementById('demo').innerHTML = "<strong>them the vao trong the</strong>";
+            document.getElementById('demo').style.backgroundColor="yellow";
+            this.style.backgroundColor ="yellow";
+        }
+
+    </script>
+
+</body>
+</html>

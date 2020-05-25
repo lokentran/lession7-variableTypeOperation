@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app convert currency</title>
+</head>
+<body>
+  
+        <label for="">Amount <input type="number" id="number" min="0"></label>
+        <label for="">From Currency <select name="fromCurrency" id="">
+            <option value="">Vietnam</option>
+        </select></label>
+        <label for="">To Currency <select name="toCurrency" id="">
+            <option value="">USD</option>
+        </select></label> 
+        <button onclick="convertCurrency()" >Convert</button>
+        <br> <br>
+    <strong>Result </strong><Span id="result"></Span><span> USD </span>
+<script>
+    function convertCurrency() {
+        let result1 = document.getElementById('number').value / 23000;
+        document.getElementById('result').innerHTML = result1;    
+    }
+</script>
+</body>
+</html>
